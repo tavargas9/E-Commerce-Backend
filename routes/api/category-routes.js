@@ -58,8 +58,19 @@ router.put('/:id', (req, res) => {
     .catch((err) => {res.json(err);});
 });
 
-router.delete('/:id', (req, res) => {
+router.delete('/:id', async (req, res) => {
   // delete a category by its `id` value
+  try {
+    const deleteThis = await Category.findByPk(req.params.id);
+    await Category.destroy({
+      where: {
+        id: req.params.id,
+      },
+    });
+    res.json(`${deleteThis} was removed from the database`)
+  } catch (err) {
+    res.status(400).json(err);
+  }
 });
 
 module.exports = router;
