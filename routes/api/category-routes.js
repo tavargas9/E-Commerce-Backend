@@ -71,7 +71,7 @@ router.delete('/:id', async (req, res) => {
         id: req.params.id,
       },
     });
-    res.json(`${deleteThis} was removed from the database`);
+    res.json(`${deleteThis.category_name} was removed from the database`);
   } catch (err) {
     res.status(400).json(err);
   }
