@@ -21,9 +21,9 @@ An Express.js-based REST API for building out a functional back end for an e-com
 
 To install this application, clone the repository to your local machine. Open the repository in VS Code (or other IDE) and open the terminal. Run the command ```npm install``` to install and set up the dependencies. You will also need to have a .env file in the root directory of the local repository for connecting the MySQL database to the application. An example is provided below:
 ```.env
-DB_NAME='ecommerce_db'
-DB_USER='mySQLUsername'
-DB_PASSWORD='mySQLPassword'
+DB_NAME = 'ecommerce_db'
+DB_USER = 'mySQLUsername'
+DB_PASSWORD = 'mySQLPassword'
 ```
 
 ## Usage
