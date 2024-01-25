@@ -30,6 +30,8 @@ DB_PASSWORD='mySQLPassword'
 
 Check out the [walkthrough video](https://drive.google.com/file/d/1e9Pctx2bTOesBCzUoqxhxA2zCVTDEGEG/view) to see the application in action!
 
+![Screenshot 2024-01-24 at 10 06 33 PM](https://github.com/tavargas9/E-Commerce-Backend/assets/142061829/91f964f5-8df1-4350-bb35-3e1127b9fbb2)
+
 Once your enviornment is properly set up and dependencies are installed, go back to the terminal and run the schema.sql file located in the db folder. To do this, run ```mysql -u yourUsername -p``` in the terminal. Replace yourUsername with your mysql username. Enter your mysql password when prompted. Then, run ```SOURCE db/schema.sql``` to create the database. Once the database is set up, it needs to be seeded. To do this, run ```npm run seed``` in the terminal.  Now that the database is set up and seeded the application is ready for use. To start the server, run ```npm start``` in the terminal. The server should now be running and is ready to accept requests. I suggest using Insomnia to make requests to the backend API.
 
 ## License 
